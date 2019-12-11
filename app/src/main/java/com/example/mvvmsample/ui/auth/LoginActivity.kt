@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity(), AuthListener {
     }
 
     override fun onStarted() {
-        progress_login.Show()
+        progress_login.Show() //
     }
 
     override fun onSuccess(loginResponse: LiveData<String>) {
