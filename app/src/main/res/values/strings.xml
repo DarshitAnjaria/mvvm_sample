@@ -9,4 +9,6 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
     <string name="already_have_an_account_login">Already have an Account? Login</string>
+    <string name="home">Home</string>
+    <string name="users">Users</string>
 </resources>
