@@ -19,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this, navController, drawer_layout)
     }
 
-    override fun onNavigateUp(): Boolean {
+    override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(
             Navigation.findNavController(this, R.id.nav_host_fragment),
             drawer_layout
