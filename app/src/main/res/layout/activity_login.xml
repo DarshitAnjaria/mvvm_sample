@@ -97,6 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
+                    android:onClick="@{viewmodel::onSignup}"
                     android:text="@string/don_t_have_an_account_register"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp" />
