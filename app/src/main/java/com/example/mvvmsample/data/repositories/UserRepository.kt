@@ -4,7 +4,7 @@ import com.example.mvvmsample.data.db.AppDatabase
 import com.example.mvvmsample.data.db.entities.User
 import com.example.mvvmsample.data.network.MyApi
 import com.example.mvvmsample.data.network.responses.AuthResponse
-import com.example.mvvmsample.data.network.responses.SafeApiRequest
+import com.example.mvvmsample.data.network.SafeApiRequest
 
 class UserRepository(
     private val api: MyApi,
