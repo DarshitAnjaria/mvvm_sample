@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvmsample.R
 import com.example.mvvmsample.data.db.entities.Quote
 import com.example.mvvmsample.util.Coroutines
+import com.example.mvvmsample.util.Hide
+import com.example.mvvmsample.util.Show
 import com.example.mvvmsample.util.toast
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
@@ -42,7 +44,9 @@ class QuotesFragment : Fragment(), KodeinAware {
     }
 
     private fun bindUI() = Coroutines.main {
+        progress_quotes.Show()
         viewModel.quotes.await().observe(this, Observer {
+            progress_quotes.Hide()
             initRecyclerView(it.toQuoteItem())
         })
     }

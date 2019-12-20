@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/colorAccent"
+        android:background="@android:color/white"
         tools:context=".ui.auth.LoginActivity">
 
         <LinearLayout
@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_background"
-                    android:drawableLeft="@drawable/ic_email"
+                    android:drawableStart="@drawable/ic_email"
                     android:drawablePadding="10dp"
                     android:hint="@string/enter_email"
                     android:inputType="textEmailAddress"
@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/edittext_background"
-                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawableStart="@drawable/ic_lock"
                     android:drawablePadding="10dp"
                     android:hint="@string/password"
                     android:inputType="textPassword"
@@ -71,6 +71,13 @@
                     android:text="@string/forgot_password"
                     android:textSize="18sp" />
 
+                <ProgressBar
+                    android:id="@+id/progress_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:visibility="invisible" />
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -82,14 +89,6 @@
                     android:text="@string/sign_in"
                     android:textAllCaps="false"
                     android:textSize="18sp"
-                    tools:targetApi="lollipop" />
-
-                <ProgressBar
-                    android:id="@+id/progress_login"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:progressBackgroundTint="@color/colorPrimaryDark"
-                    android:visibility="invisible"
                     tools:targetApi="lollipop" />
 
                 <TextView

@@ -13,7 +13,7 @@
         android:id="@+id/coordinator_signup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent"
+        android:background="@android:color/white"
         tools:context=".ui.auth.SignupActivity">
 
         <LinearLayout
@@ -41,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_background"
-                    android:drawableLeft="@drawable/ic_person"
+                    android:drawableStart="@drawable/ic_person"
                     android:drawablePadding="10dp"
                     android:hint="@string/username"
                     android:inputType="textPersonName"
@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/edittext_background"
-                    android:drawableLeft="@drawable/ic_email"
+                    android:drawableStart="@drawable/ic_email"
                     android:drawablePadding="10dp"
                     android:hint="@string/enter_email"
                     android:inputType="textEmailAddress"
@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/edittext_background"
-                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawableStart="@drawable/ic_lock"
                     android:drawablePadding="10dp"
                     android:hint="@string/password"
                     android:inputType="textPassword"
@@ -77,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/edittext_background"
-                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawableStart="@drawable/ic_lock"
                     android:drawablePadding="10dp"
                     android:hint="@string/confirm_password"
                     android:inputType="textPassword"
@@ -102,10 +102,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
+                    android:onClick="@{viewmodel::onLogin}"
                     android:text="@string/already_have_an_account_login"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="20sp"
-                    android:onClick="@{viewmodel::onLogin}"/>
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
